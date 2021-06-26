@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <div class="header">
+      <div class="header-items flex-row">
+        <div class="header-left-items">
+          <div class="menu">
+            <img src="images/menu.svg" alt="Menu">
+          </div>
+        </div>
+        <div class="header-right-items flex-row">
+          <div class="help">
+            <img src="images/Union 2.svg" alt="Help">
+          </div>
+          <div class="reminders">
+            <img src="images/noun_help_1515501.svg" alt="">
+            <img class="notification-dot" src="images/patient-status/red.svg" alt="">
+          </div>
+          <div class="notifications">
+            <img src="images/noun_notification_2184954.svg" alt="">
+            <img class="notification-dot" src="images/patient-status/red.svg" alt="">
+          </div>
+          <div class="profile">
+            <img src="images/Image 3/Image 3.png" alt="">
+          </div>
+          <div class="drucare-home">
+            <img src="images/Image 2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sections-container">
+      <div class="sections flex-row">
+        <div class="section-name">
+          <p>Nursing Station</p>
+        </div>
+        <div class="section-sub-items">
+          <ul class="flex-row">
+            <li class="hover-item"><a href="">Manage Patients</a></li>
+            <li class="hover-item"><a href="">Discharge History</a></li>
+            <li class="hover-item"><a href="">Inventory</a></li>
+            <li class="hover-item"><a href="">Housekeeping</a></li>
+          </ul>
+        </div>
+        <div class="settings-container">
+          <img src="images/noun_Settings_937618.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-sub-item-view">
+    <img class="drop-down" src="images/dropdownbutton.svg" alt="">
+    <div class="controls-for-filtering flex-row">
+      <div class="flex-column search-field">
+        <label for="search-patient-by-name">Search patient</label>
+        <input placeholder="By name, I.D, mobile number" type="text" id="search-patient-by-name">
+        <img class="search-icon" src="images/Path 2368.svg" alt="">
+      </div>
+      <div class="flex-column doctor-list">
+        <label for="filter-by-doctor">Filter by doctor</label>
+        <img class="drop-down-black" src="images/dropdown-solid-black.svg" alt="">
+        <input placeholder="Enter or select" type="text" id="filter-by-doctor">
+      </div>
+      <div class="joining-date flex-column">
+        <label for="Admission-date">Admission date</label>
+        <input type="date" placeholder="DD/MM/YY" id="admission-date">
+        <img class="calender-icon" src="images/calender.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="result-sorter flex-row">
+    <div class="ward-type">
+      <p>Ward type: <span class="bold">General</span></p>
+    </div>
+    <hr>
+    <div class="sort-by">
+      <p>show results by 
+        <span>
+          <select id="sort-type">
+            <option value="All">All</option>
+            <option value="Alphabets Order">Alphabets Order</option>
+            <option value="Joining date">Joining date</option>
+          </select>
+      </span>
+    </p>
+    </div>
+  </section>
+  <section class="search-results-container">
+    <div class="search-results flex-row">
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="images/patient-images/patient1.png" alt="">
+            </div>
+            <div class="gender">
+              <p><span><img src="images/gender-symbol/male.svg" alt=""></span>Male</p>
+            </div>
+            <div class="age">
+              <p>(28 Years)</p>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Mr. Vijaya Krishna</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 12 / Jan, 15:30 )</span></p>
+            <p class="dr-name">consultant : <span>Dr.Reddy Mahesh Babu Kumar</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Dengue fever</span> <span class="patient-status"><img src="images/patient-status/green.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition">
+          <p class="discharge">Discharge request raised</p>
+        </div>
+        <div class="room-no-container">
+          <p class="room-no-text">Room no</p>
+            <span class="bed-image"><img src="images/bed.svg" alt="">606</span>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:55bb9e0f-bf62-4513-9483-6dadee35caf1;revision=0?component_id=7799e878-922a-42eb-831b-11cd26995ca2&api_key=CometServer1&access_token=1619195199_urn%3Aaaid%3Asc%3AUS%3A55bb9e0f-bf62-4513-9483-6dadee35caf1%3Bpublic_5880ec94177e4bdf567e0a4bbd9d20e07b35f592" alt="">
+            </div>
+            <div class="gender">
+              <p><span><img src="images/gender-symbol/male.svg" alt=""></span>Male</p>
+            </div>
+            <div class="age">
+              <p>(32 Years)</p>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Mr. Mark Jacobson</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 12 / Jan, 03:30 PM )</span></p>
+            <p class="dr-name">consultant : <span>Dr. Dinesh Inuganti</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Head Injury</span> <span class="patient-status"><img src="images/patient-status/red.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition flex-column">
+          <div class="patient-pulse-temp flex-row">
+            <div>
+              <p class="test-name">Temperature</p>
+              <p class="test-value"><img src="images/temp.png" alt="">101<sup>o</sup>F</p>
+            </div>
+            <div>
+              <p class="test-name">Heart rate</p>
+              <p class="test-value"><img src="images/heart-beat-icon.png" alt="">89BPM</p>
+            </div>
+            <div>
+              <p class="test-name">Blood pressure</p>
+              <p class="test-value"><img src="images/bloodpressure-icon.png" alt="">120/80</p>
+            </div>
+            <div>
+              <p class="test-name">Oxygen</p>
+              <p class="test-value"><img src="images/oxygenlevel-icon.png" alt="">99%</p>
+            </div>
+          </div>
+          <div class="visit-service flex-row">
+            <div class="next-service">
+              <p>Next services in</p>
+              <p><img src="images/injection.png" alt=""><img src="images/tablet.png" alt="">03:12 h</p>
+            </div>
+            <div class="last-visit">
+              <p>Doctor last visit</p>
+              <p><img src="images/doctor-icon.png" alt=""> 11:40 AM Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="room-no-container">
+          <p class="room-no-text">Room no</p>
+          <span class="bed-image"><img src="images/bed.svg" alt="">607</span>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="images/patient-images/patient3.png" alt="">
+            </div>
+            <div class="gender ot-booked-profile-details">
+              <p><span><img src="images/gender-symbol/female.svg" alt=""></span>F | 24 Y</p>
+            </div>
+            <div class="age">
+              <span class="bed-image"><img src="images/bed.svg" alt="">608</span>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Miss Eleanor</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 11 / Jan, 15:30 )</span></p>
+            <p class="dr-name">consultant : <span>Dr. Kumari Sri</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Shoulder surgery</span> <span class="patient-status"><img src="images/patient-status/orange.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition flex-column">
+          <div class="patient-pulse-temp flex-row">
+            <div>
+              <p class="test-name">Temperature</p>
+              <p class="test-value"><img src="images/temp.png" alt="">101<sup>o</sup>F</p>
+            </div>
+            <div>
+              <p class="test-name">Heart rate</p>
+              <p class="test-value"><img src="images/heart-beat-icon.png" alt="">89BPM</p>
+            </div>
+            <div>
+              <p class="test-name">Blood pressure</p>
+              <p class="test-value"><img src="images/bloodpressure-icon.png" alt="">120/80</p>
+            </div>
+            <div>
+              <p class="test-name">Oxygen</p>
+              <p class="test-value"><img src="images/oxygenlevel-icon.png" alt="">99%</p>
+            </div>
+          </div>
+          <div class="visit-service flex-row">
+            <div class="next-service">
+              <p>Next services in</p>
+              <p><img src="images/injection.png" alt=""><img src="images/tablet.png" alt="">03:12 h</p>
+            </div>
+            <div class="last-visit">
+              <p>Doctor last visit</p>
+              <p><img src="images/doctor-icon.png" alt=""> 11:40 AM Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="advance-booking">
+          <p class="otbookedon">OT booked on</p>
+            <span class="ot"><img src="images/ot-icon.png" alt="">22 / Jan</span>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="images/patient-images/patient4.png" alt="">
+            </div>
+            <div class="gender">
+              <p><span><img src="images/gender-symbol/male.svg" alt=""></span>Male</p>
+            </div>
+            <div class="age">
+              <p>(28 Years)</p>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Mr. Vijaya Krishna, (28 Years )</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 2 / Jan, 15:30 )</span></p>
+            <p class="dr-name">consultant : <span>Dr.Reddy Mahesh Babu Kumar</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Dengue fever</span> <span class="patient-status"><img src="images/patient-status/orange.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition flex-column">
+          <div class="patient-pulse-temp flex-row">
+            <div>
+              <p class="test-name">Temperature</p>
+              <p class="test-value"><img src="images/temp.png" alt="">101<sup>o</sup>F</p>
+            </div>
+            <div>
+              <p class="test-name">Heart rate</p>
+              <p class="test-value"><img src="images/heart-beat-icon.png" alt="">89BPM</p>
+            </div>
+            <div>
+              <p class="test-name">Blood pressure</p>
+              <p class="test-value"><img src="images/bloodpressure-icon.png" alt="">120/80</p>
+            </div>
+            <div>
+              <p class="test-name">Oxygen</p>
+              <p class="test-value"><img src="images/oxygenlevel-icon.png" alt="">99%</p>
+            </div>
+          </div>
+          <div class="visit-service flex-row">
+            <div class="next-service">
+              <p>Next services in</p>
+              <p><img src="images/injection.png" alt=""><img src="images/tablet.png" alt="">03:12 h</p>
+            </div>
+            <div class="last-visit">
+              <p>Doctor last visit</p>
+              <p><img src="images/doctor-icon.png" alt=""> 11:40 AM Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="room-no-container">
+          <p class="room-no-text">Room no</p>
+            <span class="bed-image"><img src="images/bed.svg" alt="">609</span>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="images/patient-images/patient5.png" alt="">
+            </div>
+            <div class="gender">
+              <p><span><img src="images/gender-symbol/female.svg" alt=""></span>Female</p>
+            </div>
+            <div class="age">
+              <p>(19 Years)</p>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Miss Jaka Alex</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 19 / Dec, 15:30 )</span></p>
+            <p class="dr-name">consultant : <span>Dr. Shiva Kumar</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Bladder infection</span> <span class="patient-status"><img src="images/patient-status/green.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition flex-column">
+          <div class="patient-pulse-temp flex-row">
+            <div>
+              <p class="test-name">Temperature</p>
+              <p class="test-value"><img src="images/temp.png" alt="">101<sup>o</sup>F</p>
+            </div>
+            <div>
+              <p class="test-name">Heart rate</p>
+              <p class="test-value"><img src="images/heart-beat-icon.png" alt="">89BPM</p>
+            </div>
+            <div>
+              <p class="test-name">Blood pressure</p>
+              <p class="test-value"><img src="images/bloodpressure-icon.png" alt="">120/80</p>
+            </div>
+            <div>
+              <p class="test-name">Oxygen</p>
+              <p class="test-value"><img src="images/oxygenlevel-icon.png" alt="">99%</p>
+            </div>
+          </div>
+          <div class="visit-service flex-row">
+            <div class="next-service">
+              <p>Next services in</p>
+              <p><img src="images/injection.png" alt=""><img src="images/tablet.png" alt="">03:12 h</p>
+            </div>
+            <div class="last-visit">
+              <p>Doctor last visit</p>
+              <p><img src="images/doctor-icon.png" alt=""> 11:40 AM Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="room-no-container f">
+          <p class="room-no-text">Room no</p>
+            <span class="bed-image"><img src="images/bed.svg" alt="">606</span>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-details flex-row">
+          <div class="patient-photo-gender-age flex-column">
+            <div class="patient-image">
+              <img src="images/patient-images/patient6.png" alt="">
+            </div>
+            <div class="gender">
+              <p><span><img src="images/gender-symbol/female.svg" alt=""></span>Female</p>
+            </div>
+            <div class="age">
+              <p>(42 Years)</p>
+            </div>
+          </div>
+          <div class="patient-name-casedetails flex-column">
+            <p class="patient-name">Mrs. Elenar</p>
+            <p class="op-number">IP no : <span>2020IP007 ( 28 / Jan, 19:30 )</span></p>
+            <p class="dr-name">consultant : <span>Dr. Kumar Sri</span></p>
+            <p class="complaint">Dioagnosis : <span class="complaint-name">Eye Surgery</span> <span class="patient-status"><img src="images/patient-status/orange.svg" alt=""></span> </p>
+          </div>
+        </div>
+        <div class="patient-condition flex-column">
+          <div class="patient-pulse-temp flex-row">
+            <div>
+              <p class="test-name">Temperature</p>
+              <p class="test-value"><img src="images/temp.png" alt="">101<sup>o</sup>F</p>
+            </div>
+            <div>
+              <p class="test-name">Heart rate</p>
+              <p class="test-value"><img src="images/heart-beat-icon.png" alt="">89BPM</p>
+            </div>
+            <div>
+              <p class="test-name">Blood pressure</p>
+              <p class="test-value"><img src="images/bloodpressure-icon.png" alt="">120/80</p>
+            </div>
+            <div>
+              <p class="test-name">Oxygen</p>
+              <p class="test-value"><img src="images/oxygenlevel-icon.png" alt="">99%</p>
+            </div>
+          </div>
+          <div class="visit-service flex-row">
+            <div class="next-service">
+              <p>Next services in</p>
+              <p><img src="images/injection.png" alt=""><img src="images/tablet.png" alt="">03:12 h</p>
+            </div>
+            <div class="last-visit">
+              <p>Doctor last visit</p>
+              <p><img src="images/doctor-icon.png" alt=""> 11:40 AM Today</p>
+            </div>
+          </div>
+        </div>
+        <div class="room-no-container f">
+          <p class="room-no-text">Room no</p>
+            <span class="bed-image"><img src="images/bed.svg" alt="">611</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
